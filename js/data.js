@@ -75,7 +75,7 @@ document.addEventListener('DOMContentLoaded', function() {
   }
 
   var testArray = []
-  for (let i = 0; i < 200; i++) {
+  for (let i = 0; i < 500; i++) {
     testArray.push(new createCircle)
   }
 
