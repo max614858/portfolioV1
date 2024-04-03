@@ -22,7 +22,7 @@ nav {
 }
 
 a {
-  color: black;
+  color: rgb(33, 33, 33);
   font-size: 20px;
   font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   text-underline-offset: 15px;
@@ -39,11 +39,11 @@ a:hover {
 }
 
 a::after {
-  color: black
+  color: rgb(33, 33, 33)
 }
 
 .M {
-  color: white
+  color: rgb(233, 233, 233)
 }
 
 div {
@@ -57,6 +57,7 @@ div {
 }
 
 h1, h2 {
+  color:rgb(33, 33, 33);
   z-index: 10;
   position: relative;
   height: auto;
