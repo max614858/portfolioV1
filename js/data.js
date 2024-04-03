@@ -40,10 +40,11 @@ document.addEventListener('DOMContentLoaded', function() {
     this.r = Math.random() * 30
     this.color = colorArray[Math.floor(Math.random() * colorArray.length)]
     this.velx = Math.ceil(Math.random() * 7)
+    this.randomCap = Math.random() * 50
+    this.randSize = Math.random() * 5
     this.draw = function() {
       c.beginPath()
       c.arc(this.x, this.y, this.r, 0, Math.PI*2, false)
-      this.randSize = Math.random() * 5
       c.fillStyle = this.color
       c.fill()
       c.stroke()
@@ -55,7 +56,7 @@ document.addEventListener('DOMContentLoaded', function() {
         (this.x = 0 - this.r - 10)
       }
       if ((mouse.x > this.x - 100) && (mouse.x < this.x + 100) && (mouse.y > this.y - 100) && (mouse.y < this.y + 100)) {
-        if (this.r < 50) {
+        if (this.r < this.randomCap) {
           this.r += this.randSize
         }
       } else if (this.r > 2) {
@@ -74,7 +75,7 @@ document.addEventListener('DOMContentLoaded', function() {
   }
 
   var testArray = []
-  for (let i = 0; i < 120; i++) {
+  for (let i = 0; i < 200; i++) {
     testArray.push(new createCircle)
   }
 
